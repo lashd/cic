@@ -6,6 +6,7 @@ RUN apt-get update -q -y
 RUN apt-get -y -q install vim curl bash unzip software-properties-common python-software-properties
 
 
+
 #LATEST GIT
 RUN apt-add-repository ppa:git-core/ppa
 RUN apt-get clean && apt-get update && apt-get install -q -y git
