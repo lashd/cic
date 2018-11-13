@@ -233,10 +233,10 @@ If everything is working then you should be able to login in to the [management 
 The automated tests that accompany this exercise should also pass. Run `pytest` to execute them and you should see:
 ```
 ============================= test session starts ==============================
-platform linux -- Python 3.7.0, pytest-3.8.2, py-1.6.0, pluggy-0.7.1
-rootdir: /vols/pytest_26462, inifile:
-plugins: testinfra-1.16.0
-collecting 0 items                                                             collecting 1 item                                                              collected 1 item                                                               
+platform linux -- Python 3.7.0, pytest-3.10.1, py-1.7.0, pluggy-0.8.0
+rootdir: /vols/pytest_18133, inifile:
+plugins: testinfra-1.17.0
+collecting ... collected 1 item                                                               
 
 tests/test_rabbitmq_cluster.py .                                         [100%]
 
@@ -247,4 +247,4 @@ tests/test_rabbitmq_cluster.py .                                         [100%]
 
   
 
-Revision: 159e69438608a223d98268706ffb2a1b
+Revision: 46edc9ed4f772718ea6853989efbd668

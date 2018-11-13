@@ -16,7 +16,7 @@ It is assumed that you know enough about Ansible to define a simple Playbook and
 **Note:** Before going any further do the following:
 - `cd YOUR_CLONE_OF_THIS REPO`
 - `source ./bin/env`
-- `cd ./exercises/IaC/ansible/roles`
+- `cd blah`
 
 run `cic up` to bring up all the test infrastructure and support files required to complete this exercise. To stop and reset this infrastructure run `cic down`
 
@@ -365,14 +365,14 @@ Before starting, visit [http://localhost:8888/](http://localhost:8888/) and [htt
 Write the new Role and implement it correctly within the Playbook to pass the supplied exercise acceptance tests. Run `pytest` to execute them. When you have been successful you should see the following:
 ```
 ============================= test session starts ==============================
-platform linux -- Python 3.7.0, pytest-3.8.2, py-1.6.0, pluggy-0.7.1
-rootdir: /vols/pytest_16577, inifile:
-plugins: testinfra-1.16.0
-collecting 0 items                                                             collecting 2 items                                                             collected 2 items                                                              
+platform linux -- Python 3.7.0, pytest-3.10.1, py-1.7.0, pluggy-0.8.0
+rootdir: /vols/pytest_21102, inifile:
+plugins: testinfra-1.17.0
+collecting ... collected 2 items                                                              
 
 tests/webservers_test.py ..                                              [100%]
 
-=========================== 2 passed in 1.23 seconds ===========================
+=========================== 2 passed in 1.76 seconds ===========================
 ```
 
 #### Helpful Hints
@@ -402,4 +402,4 @@ As Playbooks get larger, Ansible Roles are a good way of encapsulating and shari
 
   
 
-Revision: 1a97ea3a83f0f700adc564e0bec4d4ca
+Revision: 18e88338888d965a1a55f17d9b0fdc0f

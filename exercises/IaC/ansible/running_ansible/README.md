@@ -21,7 +21,7 @@ Ansible has lots of features that you will learn about in future exercises. The 
 - Before going any further do the following:
   - `cd YOUR_CLONE_OF_THIS REPO`
   - `source ./bin/env`
-  - `cd ./exercises/IaC/ansible/running_ansible`
+  - `cd blah`
 
 - So that you don't have to worry about supplying your own infrastructure for ansible to work upon, we have configured the courseware to run ansible against docker containers that we stand up for you. You don't need to know how this works simply that when we mention containers we simply mean where you ansible as run. In the exercise, we'll show you how to connect to these containers to inspect them.
 
@@ -146,17 +146,17 @@ To run this script, execute the following command: `pytest --ansible-host=cic_co
 This should output the following:
 ```
 ============================= test session starts ==============================
-platform linux -- Python 3.7.0, pytest-3.8.2, py-1.6.0, pluggy-0.7.1 -- /root/.pyenv/versions/3.7.0/bin/python3.7
+platform linux -- Python 3.7.0, pytest-3.10.1, py-1.7.0, pluggy-0.8.0 -- /root/.pyenv/versions/3.7.0/bin/python3.7
 cachedir: .pytest_cache
-rootdir: /vols/pytest_20552, inifile: pytest.ini
-plugins: testinfra-1.16.0
-collecting 0 items                                                             collecting 3 items                                                             collected 3 items                                                              
+rootdir: /vols/pytest_23186, inifile: pytest.ini
+plugins: testinfra-1.17.0
+collecting ... collected 3 items                                                              
 
 tests/apache_ansible_test.py::test_apache_installed PASSED               [ 33%]
 tests/apache_ansible_test.py::test_apache_is_enabled_as_service PASSED   [ 66%]
 tests/apache_ansible_test.py::test_apache_installed_is_running PASSED    [100%]
 
-=========================== 3 passed in 0.79 seconds ===========================
+=========================== 3 passed in 0.83 seconds ===========================
 ```
 
 In just a second or so the test has validated that:
@@ -171,4 +171,4 @@ Ansible is a great tool for configuring infrastructure. Baked in to its philosop
 
   
 
-Revision: 1dca63e8c8e87e72308b726e0fd12feb
+Revision: e8b50e205d5f75e2ead51829b25bbe35

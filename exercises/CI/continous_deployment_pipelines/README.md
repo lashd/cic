@@ -60,7 +60,7 @@ Concourse uses [YAML](http://yaml.org/spec/1.2/spec.html) to configure it. YAML 
 **Note:** Before going any further do the following:
 - `cd YOUR_CLONE_OF_THIS_REPO`
 - `source ./bin/env`
-- `cd ./exercises/CI/continous_deployment_pipelines`
+- `cd blah`
 - run `cic up` to bring up the tutorial environment.
 
 **Note:** once you've finished this exercise, don't forget to run the `cic down` to stop your the environment that you've been using for this tutorial.
@@ -111,6 +111,7 @@ waiting for docker to come up...
 Pulling busybox@sha256:2a03a6059f21e150ae84b0973863609494aad70f0a80eaeb64bddd8d92465812...
 sha256:2a03a6059f21e150ae84b0973863609494aad70f0a80eaeb64bddd8d92465812: Pulling from library/busybox
 90e01955edcd: Pulling fs layer
+90e01955edcd: Verifying Checksum
 90e01955edcd: Download complete
 90e01955edcd: Pull complete
 Digest: sha256:2a03a6059f21e150ae84b0973863609494aad70f0a80eaeb64bddd8d92465812
@@ -327,4 +328,4 @@ Have fun and good luck! :)
 
   
 
-Revision: 96cd69a90a3999d9ae2edf1e96715df8
+Revision: 621304c0cf72331ebf32c4f5ca731f66

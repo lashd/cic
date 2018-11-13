@@ -18,7 +18,7 @@ This exercise assumes that you have basic knowledge of at least one programming.
 **Note:** Before going any further do the following:
 - `cd YOUR_CLONE_OF_THIS REPO`
 - `source ./bin/env`
-- `cd ./exercises/CI/linting`
+- `cd blah`
 
 ### Installing a Linter
 All modern Languages have Linters. If your programming in Ruby you might use [Simplcov](https://github.com/colszowka/simplecov). If your using Python then, amongst others, there's [Pylint](https://www.pylint.org/). The means of installing will be specific to the Linter. In the case of Pylint and Simplecov both can be installed using their language's respective package managers (pip and gem).
@@ -126,18 +126,18 @@ Your code has been rated at 10.00/10
 Don't forget to make sure that the tests are still passing after making your changes. Run pytest to execute them.
 ```
 ============================= test session starts ==============================
-platform linux -- Python 3.7.0, pytest-3.8.2, py-1.6.0, pluggy-0.7.1 -- /root/.pyenv/versions/3.7.0/bin/python3.7
+platform linux -- Python 3.7.0, pytest-3.10.1, py-1.7.0, pluggy-0.8.0 -- /root/.pyenv/versions/3.7.0/bin/python3.7
 cachedir: .pytest_cache
-rootdir: /vols/pytest_31051, inifile: pytest.ini
-plugins: testinfra-1.16.0
-collecting 0 items                                                             collecting 0 items                                                             collecting 3 items                                                             collecting 4 items                                                             collecting 4 items                                                             collected 4 items                                                              
+rootdir: /vols/pytest_546, inifile: pytest.ini
+plugins: testinfra-1.17.0
+collecting ... collected 4 items                                                              
 
 tests/test_calculator_add.py::test_adds_value PASSED                     [ 25%]
 tests/test_calculator_add.py::test_adds_on_to_running_total PASSED       [ 50%]
 tests/test_calculator_add.py::test_minus_numbers PASSED                  [ 75%]
 tests/test_calculator_result.py::test_is_0_by_default PASSED             [100%]
 
-=========================== 4 passed in 0.03 seconds ===========================
+=========================== 4 passed in 0.02 seconds ===========================
 ```
 
 ## Summary
@@ -146,4 +146,4 @@ Linter's are an invaluable tool for digging out code smells. They are fast and u
 Linters are opinionated but can also be tuned to the needs of project, this gives the opportunity for team mates to agree on a set of principles and leave policing to the tool and their CI process.
   
 
-Revision: 3c3e8fe0f705406fc21313c4695a1f13
+Revision: 4b336d4c9499949252d617552e7fb8d9

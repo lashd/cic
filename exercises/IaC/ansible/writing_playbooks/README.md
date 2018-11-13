@@ -25,6 +25,7 @@ Before we go any further let's break down the anatomy of playbooks. Playbooks ar
     - item2_attribute1: value
 ```
 
+
 - `---` : this denotes the start of a file and is actually optional in both YAML and Playbooks. We've used it here because it is something that's often seen, but is present by convention rather than requirement.
 - `#` Anything following a hash symbol is a comment meant for human readers. Comments are not interpreted.
 - `-` a single hyphen denotes a list. Content that is on the same line and imeditately tabbed in on the following lines is a member of that list entry. In the case of the example above. the YAML consist of a single item list. That item has attributes, one of which (attribute2), is itself a list that contains 2 items.
@@ -72,7 +73,8 @@ We are using just a few of the attributes that Ansible provides for customising 
 **Note:** Before going any further do the following:
 - `cd YOUR_CLONE_OF_THIS REPO`
 - `source ./bin/env`
-- `cd ./exercises/IaC/ansible/writing_playbooks`
+- `cd /exercises/IaC/ansible/writing_playbooks`
+
 
 ### Scenario
 Your team of devoted and talented web developers have spent several weeks beavering away on possibly the most advanced, inspiring and responsive website ever created. They have now passed the website code over to your for deployment. The website code that your developers have provided you with can be found in the `./resources` folder.
@@ -225,18 +227,18 @@ You'll know that you've got it right when the acceptance tests pass :)
 
 ```
 ============================= test session starts ==============================
-platform linux -- Python 3.7.0, pytest-3.8.2, py-1.6.0, pluggy-0.7.1 -- /root/.pyenv/versions/3.7.0/bin/python3.7
+platform linux -- Python 3.7.0, pytest-3.10.1, py-1.7.0, pluggy-0.8.0 -- /root/.pyenv/versions/3.7.0/bin/python3.7
 cachedir: .pytest_cache
-rootdir: /vols/pytest_17107, inifile: pytest.ini
-plugins: testinfra-1.16.0
-collecting 0 items                                                             collecting 4 items                                                             collected 4 items                                                              
+rootdir: /vols/pytest_19001, inifile: pytest.ini
+plugins: testinfra-1.17.0
+collecting ... collected 4 items                                                              
 
 tests/webserver_test.py::test_apache_installed PASSED                    [ 25%]
 tests/webserver_test.py::test_apache_is_enabled_as_service PASSED        [ 50%]
 tests/webserver_test.py::test_apache_installed_is_running PASSED         [ 75%]
 tests/webserver_test.py::test_website_deployed PASSED                    [100%]
 
-=========================== 4 passed in 0.89 seconds ===========================
+=========================== 4 passed in 0.81 seconds ===========================
 ```
 
 Good luck!
@@ -258,4 +260,4 @@ You have just learned how to:
 
   
 
-Revision: faae068b3703f2d9cc99ad2d1251f88e
+Revision: 5224b40885aec90d95064bb5fa1a19c6

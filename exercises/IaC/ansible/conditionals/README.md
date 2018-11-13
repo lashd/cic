@@ -15,7 +15,7 @@ It is assumed that you are familiar with the basics of Ansible, such that you ca
 
 - `cd YOUR_CLONE_OF_THIS REPO`
 - `source ./bin/env`
-- `cd ./exercises/IaC/ansible/conditionals`
+- `cd blah`
 
 Run `cic up` to bring up all the test infrastructure and support files required to complete this exercise. To stop and reset this infrastructure run `cic down`.
 
@@ -60,8 +60,8 @@ TASK [Gathering Facts] *********************************************************
 ok: [127.0.0.1]
 
 TASK [Runtime requirements check] **********************************************
-fatal: [127.0.0.1]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'installation_dir' is undefined\n\nThe error appears to have been in '/vols/ansible_308/ansible/when.yml': line 5, column 5, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n  - name: Runtime requirements check\n    ^ here\n"}
-	to retry, use: --limit @/vols/ansible_308/ansible/when.retry
+fatal: [127.0.0.1]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'installation_dir' is undefined\n\nThe error appears to have been in '/vols/ansible_28607/ansible/when.yml': line 5, column 5, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n  - name: Runtime requirements check\n    ^ here\n"}
+	to retry, use: --limit @/vols/ansible_28607/ansible/when.retry
 
 PLAY RECAP *********************************************************************
 127.0.0.1                  : ok=1    changed=0    unreachable=0    failed=1   
@@ -371,8 +371,8 @@ TASK [Gathering Facts] *********************************************************
 ok: [127.0.0.1]
 
 TASK [include] *****************************************************************
-included: /vols/ansible_17581/ansible/create_users_and_groups.yml for 127.0.0.1 => (item={'key': 'Admin', 'value': ['user1', 'user2']})
-included: /vols/ansible_17581/ansible/create_users_and_groups.yml for 127.0.0.1 => (item={'key': 'Team', 'value': ['user3', 'user4', 'user5']})
+included: /vols/ansible_30713/ansible/create_users_and_groups.yml for 127.0.0.1 => (item={'key': 'Admin', 'value': ['user1', 'user2']})
+included: /vols/ansible_30713/ansible/create_users_and_groups.yml for 127.0.0.1 => (item={'key': 'Team', 'value': ['user3', 'user4', 'user5']})
 
 TASK [create group] ************************************************************
 ok: [127.0.0.1] => {
@@ -451,10 +451,10 @@ If you've got everything right then the tests we've written for you should pass.
 ```
 
 ============================= test session starts ==============================
-platform linux -- Python 3.7.0, pytest-3.8.2, py-1.6.0, pluggy-0.7.1
-rootdir: /vols/pytest_24767, inifile:
-plugins: testinfra-1.16.0
-collecting 0 items                                                             collecting 2 items                                                             collected 2 items                                                              
+platform linux -- Python 3.7.0, pytest-3.10.1, py-1.7.0, pluggy-0.8.0
+rootdir: /vols/pytest_457, inifile:
+plugins: testinfra-1.17.0
+collecting ... collected 2 items                                                              
 
 tests/test_packages_are_installed.py ..                                  [100%]
 
@@ -465,4 +465,4 @@ Good Luck!!
 
   
 
-Revision: 86e2716882fe9786627f39499f3d50d2
+Revision: 966486a3a18cb095ed4af7fb67a30281
