@@ -6,7 +6,6 @@ networks:
       name: cic
 
 services:
-
   tools:
     image: cicimages/tools
   wrappers-pylint:
@@ -15,6 +14,10 @@ services:
     image: cicimages/wrappers-pytest
   wrappers-ansible:
     image: cicimages/wrappers-ansible
+  environments-ubuntu:
+    image: cicimages/wrappers-ubuntu
+  environments-centos:
+    image: cicimages/wrappers-centos
 
 
 
