@@ -1,0 +1,20 @@
+version: '3'
+
+networks:
+  default:
+    external:
+      name: cic
+
+services:
+
+  tools:
+    image: cicimages/tools
+  wrappers-pylint:
+    image: cicimages/wrappers-pylint
+  wrappers-pytest:
+    image: cicimages/wrappers-pytest
+  wrappers-ansible:
+    image: cicimages/wrappers-ansible
+
+
+
