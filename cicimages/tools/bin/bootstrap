@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo Hello bootstrapping!
+cp -R /cic/bin/* /mnt/bin/
+rm -R /cic/bin/support/ruby

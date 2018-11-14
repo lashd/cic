@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+CURRENT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+root_dir="${CURRENT_PATH}/.."
+cic_dir="${root_dir}/.cic"
+bin_dir="${root_dir}/tmp"
+rm -rf "${bin_dir}/*"
+
+cd ../.cic
+docker-compose pull
+docker run  -v "${bin_dir}:/mnt/bin" -t cicimages/tools:entrypoint
